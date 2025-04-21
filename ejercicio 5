@@ -1,0 +1,23 @@
+print("Bienvenido a Certifika")
+nombre = input("Ingresa tu nombre: ")
+nota = float(input("Ingresa tu nota para ver tus beneficios: "))
+monto = 200000
+
+if nota >= 6.0:
+    descuento = monto * 0.20
+    total = monto - descuento
+    print(f"{nombre}, tu calificación es de {nota}. ¡Obtuviste un 20% de descuento!")
+    print(f"Monto a cancelar: {total}")
+elif nota >= 5.0:
+    descuento = monto * 0.15
+    total = monto - descuento
+    print(f"{nombre}, tu calificación es de {nota}. ¡Obtuviste un 15% de descuento!")
+    print(f"Monto a cancelar: {total}")
+elif nota >= 4.0:
+    descuento = monto * 0.05
+    total = monto - descuento
+    print(f"{nombre}, tu calificación es de {nota}. ¡Obtuviste un 5% de descuento!")
+    print(f"Monto a cancelar: {total}")
+else:
+    print(f"{nombre}, tu calificación es de {nota}. No obtuviste descuento.")
+    print(f"Debes pagar: {monto}")
